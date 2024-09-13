@@ -4,7 +4,7 @@
 int main(){
 	char* oi;
 	char message[32] = {65, 115, 104, 101, 114};
-	oi = message;
+	oi = &message[0];
 	for (int i = 0; i < sizeof(oi); i++) {
 		std::cout << oi[i];
 	};
